@@ -45,7 +45,7 @@ $title = cut_str(db::result( $title_query ),10,"...");
     <?php for ($i=0; $i<count($list); $i++) { ?>
         <li>
             <?php
-			echo "<img src='".x::url()?>/widget/<?=$widget_config['name']."/img/square-icon.png'>";
+			echo "<img src='".x::url()."/widget/".$widget_config['name']."/img/square-icon.png'>";
             echo "<a href=\"".$list[$i]['url']."\">";
             if ($list[$i]['is_notice'])
                 echo "<strong>".$list[$i]['subject']."</strong>";
@@ -59,27 +59,27 @@ $title = cut_str(db::result( $title_query ),10,"...");
     <?php } ?>
     <?php if (count($list) == 0) { //게시물이 없을 때 ?>
 		 <li>
-			<img src='<?=$latest_skin_url?>/img/square-icon.png'>
+			<img src='<?=x::url()?>/widget/<?=$widget_config['name']?>/img/square-icon.png'>
             <a href="javascript:void(0)">현재 회원님께서는</a>
         </li>
 		 <li>
-			<img src='<?=$latest_skin_url?>/img/square-icon.png'>
+			<img src='<?=x::url()?>/widget/<?=$widget_config['name']?>/img/square-icon.png'>
             <a href="javascript:void(0)">필고 모바일테마를</a>
         </li>
 		 <li>
-			<img src='<?=$latest_skin_url?>/img/square-icon.png'>
+			<img src='<?=x::url()?>/widget/<?=$widget_config['name']?>/img/square-icon.png'>
             <a href="javascript:void(0)">사용하고 있습니다.</a>
         </li> 
 		<li>
-			<img src='<?=$latest_skin_url?>/img/square-icon.png'>
+			<img src='<?=x::url()?>/widget/<?=$widget_config['name']?>/img/square-icon.png'>
             <a href="javascript:void(0)">현재 게시판에 등록된</a>
         </li>
 		<li>
-			<img src='<?=$latest_skin_url?>/img/square-icon.png'>
+			<img src='<?=x::url()?>/widget/<?=$widget_config['name']?>/img/square-icon.png'>
             <a href="javascript:void(0)">글은 없습니다.</a>
         </li>
 		<li>
-			<img src='<?=$latest_skin_url?>/img/square-icon.png'>
+			<img src='<?=x::url()?>/widget/<?=$widget_config['name']?>/img/square-icon.png'>
             <a href="<?=url_site_config()?>">게시판 설정바로가기</a>
         </li>		
 	<?php } ?>
