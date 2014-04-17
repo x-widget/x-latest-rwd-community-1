@@ -1,0 +1,60 @@
+.latest-rwd-community-1 {
+	background: #ffffff;	
+}
+
+.latest-rwd-community-1 .title {
+	padding: 0.5em 0.5em 0.35em 0.5em;
+	border-bottom: solid 1px #bbbbbb;	
+}
+
+.latest-rwd-community-1 .title a{
+	text-decoration:none;
+}
+
+.latest-rwd-community-1 .title .board_subject{
+	display:inline-block;
+	width:60%;
+	height:15px;
+	overflow:hidden;
+}
+
+.latest-rwd-community-1 .title img {
+	margin-right: 0.3em;
+	position: relative;
+	top: -1px;
+}
+
+.latest-rwd-community-1 .title .latest-more {
+	float:right;
+}
+
+.latest-rwd-community-1 .title .latest-more a {
+	color: #8f8f8f;	
+}
+
+.latest-rwd-community-1 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0.5em 0.813em 1em 0.813em;
+}
+
+.latest-rwd-community-1 ul li {
+	width: 80%;
+	height: 14px;
+	overflow: hidden;
+	padding: 0.25em 0;
+	word-break:break-all;
+}
+
+.latest-rwd-community-1 ul li a{
+	text-decoration:none;
+}
+
+.latest-rwd-community-1 ul li a:hover{
+	color:#ff9c00;
+	font-weight:bold;
+}
+
+.latest-rwd-community-1 ul li img {
+	margin-right: 0.813em;
+}
