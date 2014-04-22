@@ -13,7 +13,7 @@ if($file_headers[0] == 'HTTP/1.1 404 Not Found') {
 }
 
 if( $widget_config['forum1'] ) $_bo_table = $widget_config['forum1'];
-else $_bo_table = bo_table(1);
+else $_bo_table = $widget_config['default_forum_id'];
 
 if( $widget_config['no'] ) $limit = $widget_config['no'];
 else $limit = 10;
