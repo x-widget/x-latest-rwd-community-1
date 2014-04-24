@@ -24,8 +24,16 @@ $list = g::posts( array(
 			"select"	=>	"idx,domain,bo_table,wr_id,wr_parent,wr_is_comment,wr_comment,ca_name,wr_datetime,wr_hit,wr_good,wr_nogood,wr_name,mb_id,wr_subject,wr_content"
 				)
 		);
-$title_query = "SELECT bo_subject FROM ".$g5['board_table']." WHERE bo_table = '".$_bo_table."'";
-$title = cut_str(db::result( $title_query ),10,"...");
+		
+$title = $widget_config['title'];
+	if ( empty( $title ) ) {
+		$cfg = g::config( $_bo_table, 'bo_subject' );
+		$title = cut_str( $cfg['bo_subject'],10,"...");
+	}
+
+	if ( empty($title) ) {
+		$title = "No title";
+	}
 ?>
 
 
