@@ -43,9 +43,10 @@
 .latest-rwd-community-1 ul li {
 	width: 80%;
 	height: 14px;
+	line-height:15px;
 	overflow: hidden;
 	padding: 0.25em 0;
-	word-break:break-all;
+	word-break:break-all;	
 }
 
 .latest-rwd-community-1 ul li a{
